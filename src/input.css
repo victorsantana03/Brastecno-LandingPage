@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+
+    /* CORES SECUNDÁRIAS */
+    --color-cold-white: #F1F1F1;
+    --color-light-salmon: #FF8C69;
+    --color-light-mint: #E1F4E7;
+    --color-verde-agua: #87EFDD;
+    --color-mint:  #00A184;
+    --color-gray: #7E7E7E;
+    --color-azul-petroleo: #07132A;
+    --color-black: #000000;
+
+    /* CORES PRIMÁRIAS */
+    --color-azul-marinho: #1D4289;
+    --color-gradient-azul: #07132A;
+    --color-branco: #FFFFFF;
+
+    /* FONTES */
+    --font-bebasneue: "Bebas Neue", "sans-serif";
+    --font-roboto: "Roboto", serif;
+}
