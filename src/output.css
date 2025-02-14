@@ -704,9 +704,6 @@
       max-width: 96rem !important;
     }
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -817,6 +814,9 @@
   }
   .w-2xl {
     width: var(--container-2xl);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
@@ -945,12 +945,6 @@
   }
   .scale-none {
     scale: none;
-  }
-  .rotate-30 {
-    rotate: 30deg;
-  }
-  .rotate-60 {
-    rotate: 60deg;
   }
   .rotate-90 {
     rotate: 90deg;
@@ -1347,11 +1341,11 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1404,14 +1398,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
   }
   .border-x {
     border-inline-style: var(--tw-border-style);
@@ -1484,32 +1470,11 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
-  }
   .bg-azul-marinho {
     background-color: var(--color-azul-marinho);
   }
-  .bg-azul-petroleo {
-    background-color: var(--color-azul-petroleo);
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
-  }
-  .bg-blue-900 {
-    background-color: var(--color-blue-900);
-  }
   .bg-cold-white {
     background-color: var(--color-cold-white);
-  }
-  .bg-gray {
-    background-color: var(--color-gray);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1752,37 +1717,21 @@
   .font-roboto {
     font-family: var(--font-roboto);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-7xl\/7 {
-    font-size: var(--text-7xl);
-    line-height: calc(var(--spacing) * 7);
-  }
   .text-7xl\/20 {
     font-size: var(--text-7xl);
     line-height: calc(var(--spacing) * 20);
-  }
-  .text-7xl\/25 {
-    font-size: var(--text-7xl);
-    line-height: calc(var(--spacing) * 25);
-  }
-  .text-7xl\/30 {
-    font-size: var(--text-7xl);
-    line-height: calc(var(--spacing) * 30);
-  }
-  .text-sm\/7 {
-    font-size: var(--text-sm);
-    line-height: calc(var(--spacing) * 7);
   }
   .leading-none {
     --tw-leading: 1;
@@ -1869,11 +1818,23 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-branco {
-    color: var(--color-branco);
+  .text-azul-marinho {
+    color: var(--color-azul-marinho);
   }
-  .text-yellow-500 {
-    color: var(--color-yellow-500);
+  .text-azul-petroleo {
+    color: var(--color-azul-petroleo);
+  }
+  .text-cold-white {
+    color: var(--color-cold-white);
+  }
+  .text-gray {
+    color: var(--color-gray);
+  }
+  .text-mint {
+    color: var(--color-mint);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
@@ -2317,20 +2278,6 @@
   }
   .transform-view {
     transform-box: view-box;
-  }
-  .hover\:bg-azul-petroleo {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-azul-petroleo);
-      }
-    }
-  }
-  .hover\:opacity-90 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 90%;
-      }
-    }
   }
   .hover\:opacity-95 {
     &:hover {
