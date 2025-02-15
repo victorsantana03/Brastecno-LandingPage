@@ -8,22 +8,24 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <title>Brastecno</title>
 </head>
 
 <body>
     <!--CABEÇALHO-->
-    <header class="px-32 py-5 bg-cold-white">
-        <div class="flex items-center justify-between">
+    <header class="px-10 md:px-24 lg:px-52 py-3 flex bg-cold-white ">
+        <div class="flex items-center md:gap-72">
             <div>
-                <img class="w-80" src="../assets/logos/logo-brastecno-cinsa.png" alt="Logo Brastecno Cinza">
+                <img class="w-40 min-w-40" src="../assets/logos/logo-brastecno-cinsa.png" alt="Logo Brastecno Cinza">
             </div>
-            <nav class="flex ">
+            <nav class="xl:flex hidden">
 
-                <ul class="flex gap-10 text-xl font-semibold font-roboto">
-                    <li><a href="#Home">Home</a></li>
+                <ul class="flex gap-10 text-lg font-semibold font-roboto">
+                    <li class="hover:text-azul-marinho duration-200"><a href="#Home">Home</a></li>
                     <li><a href="#Abt">Sobre Nós</a></li>
                     <li><a href="#Servicos">Serviços</a></li>
                     <li><a href="#Feedback">Feedbacks</a></li>
@@ -39,22 +41,27 @@
 
     <main>
         <!--HOME-->
-        <section id="Home" class="h-screen px-32 bg-cold-white">
-            <div class="h-full flex justify-between items-center">
-                <div class="flex flex-col gap-24">
-                    <div class="w-2xl ">
-                        <h1 class="text-7xl/20 font-semibold font-bebasneue ">Manutenção de Eletrodomésticos com Qualidade e Confiança</h1>
-                        <div class="font-roboto pt-10">
-                            <button class="bg-azul-marinho px-4 py-3 rounded-4xl cursor-pointer hover:opacity-95"><a
-                                href="https://wa.link/u6e3el">
-                                <p class="text-cold-white font-roboto font-semibold text-xl">Agende seu atendimento</p></a>
+        <section id="Home" class="px-10 md:px-24 lg:px-52 py-10 md:py-20 h-[100dvh] md:h-full bg-cold-white relative">
+            <div class="flex justify-between items-center ">
+                <div class="flex flex-col items-center md:items-start  gap-24 md:pt-10">
+                    <div class="md:w-xl">
+                        <h1 class="lg:text-6xl/20 md:text-5xl/15 xl:text-7xl/20 text-4xl font-semibold font-bebasneue text-center md:text-start ">Manutenção de Eletrodomésticos com
+                            Qualidade e Confiança</h1>
+                        <div class="font-roboto pt-10 flex justify-center md:justify-start">
+                            <button class="bg-azul-marinho px-4 py-3 rounded-4xl cursor-pointer hover:opacity-95">
+                                <a
+                                    href="https://wa.link/u6e3el">
+                                    <p class="text-cold-white font-roboto font-semibold text-md md:text-xl">Agende seu atendimento
+                                    </p>
+                                </a>
                             </button>
-                            
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
+
+                    <div class="md:flex items-center gap-4 pt-20 hidden">
                         <div>
-                            <a href="https://www.google.com/maps/place/Brastecno+Guarulhos/@-23.4513082,-46.5156551,17z/data=!4m14!1m5!8m4!1e1!2s103548995699682060048!3m1!1e1!3m7!1s0x94ce8bbbaacda4c3:0xa2ff2b463d839ec9!8m2!3d-23.4513082!4d-46.5130802!9m1!1b1!16s%2Fg%2F11qg9wr1mh?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D ">
+                            <a
+                                href="https://www.google.com/maps/place/Brastecno+Guarulhos/@-23.4513082,-46.5156551,17z/data=!4m14!1m5!8m4!1e1!2s103548995699682060048!3m1!1e1!3m7!1s0x94ce8bbbaacda4c3:0xa2ff2b463d839ec9!8m2!3d-23.4513082!4d-46.5130802!9m1!1b1!16s%2Fg%2F11qg9wr1mh?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D ">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -63,7 +70,7 @@
                             </a>
                         </div>
                         <div class="border w-14"></div>
-                        
+
                         <div class="font-roboto">
                             <p>Reviews</p>
                         </div>
@@ -71,116 +78,134 @@
                     </div>
                 </div>
 
-                <div>
-                    <img src="../assets/logos/foto-home.png" alt="">
-                </div>
 
-                <div class="flex items-center gap-3 rotate-90 text-gray">
+
+                <div class="xl:flex hidden items-center gap-3 rotate-90 text-gray ">
                     <p class="font-roboto text-gray">scroll down</p>
                     <div class="border w-14"></div>
                 </div>
             </div>
 
+            <div class="absolute bottom-0 left-1/2 md:left-[500px] lg:left-[660px] xl:left-1/2 transform -translate-x-1/2 w-[190px] md:w-[230px] lg:w-[300px] xl:w-[400px] md:translate-x-[20px]">
+                <img src="../assets/logos/foto-home.png" alt="" class="w-full ">
+            </div>
 
-            <div>
-                <h2>2005</h2>
+            <div class="hidden text-[200px] font-roboto font-bold text-gray absolute right-96 bottom-10">
+                <span>20 05<br>
+
+                </span>
             </div>
         </section>
         <!--FIM HOME-->
 
-        <!--01 valores Cath-->
-        <section id="Abt">
-            <div>
-                <div>
-                    <span>Sobre nós</span>
-                </div>
-                <div>
-                    <p>Na Brastecno, nossos valores de confiança, dedicação e inovação nos guiam em cada atendimento.
-                        Trabalhamos com soluções modernas e transparentes para cuidar dos seus eletrodomésticos,
-                        garantindo eficiência, qualidade e a tranquilidade que você merece.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!--01 Fim valores Cath-->
 
-        <!--ABOUT US (HISTÓRIA 01/02) VICTOR-->
-        <section>
-            <div>
-                <div>
-                    <h1>2005</h1>
-                    <h3>Uma Paixão Que Virou Referência em Manutenção</h3>
-                    <p>A Brastecno nasceu da paixão pelo conserto de eletrodomésticos, iniciada pelo nosso fundador
-                        Estevão Grossi, que aprendeu a profissão de forma autodidata e aprimorou suas habilidades com
-                        cursos e experiência prática. Com dedicação e compromisso, ele conquistou a confiança dos
-                        clientes, oferecendo serviços de qualidade e atendimento transparente.</p>
+        <section id="Abt" class="px-52 pt-20 bg-branco">
+            <div class="flex flex-col gap-20">
+                <!--01 valores Cath-->
+                <div class="flex flex-col gap-10 w-5xl my-10">
+                    <div>
+                        <h3 class="text-3xl font-roboto tracking-wider">Sobre nós</h3>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-bebasneue leading-snug">Na Brastecno, nossos valores de confiança,
+                            dedicação e
+                            inovação nos guiam em cada atendimento.
+                            Trabalhamos com soluções modernas e transparentes para cuidar dos seus eletrodomésticos,
+                            garantindo eficiência, qualidade e a tranquilidade que você merece.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <!--01 Fim valores Cath-->
+
+                <!--ABOUT US HISTÓRIA VICTOR-->
+                <div class="flex items-center gap-15 ">
+                    <div class="w-xl">
+                        <img src="../assets/logos/AboutUs-História.JPG" alt="">
+                    </div>
+                    <div class="flex flex-col gap-5 w-2xl">
+                        <h1 class="font-roboto text-8xl font-bold">2005</h1>
+                        <h3 class="font-bebasneue text-3xl">Uma Paixão Que Virou Referência em Manutenção</h3>
+                        <p class="font-roboto text-xl leading-relaxed">A Brastecno nasceu da paixão pelo conserto de
+                            eletrodomésticos, iniciada pelo nosso fundador
+                            Estevão Grossi, que aprendeu a profissão de forma autodidata e aprimorou suas habilidades
+                            com
+                            cursos e experiência prática. Com dedicação e compromisso, ele conquistou a confiança dos
+                            clientes, oferecendo serviços de qualidade e atendimento transparente.</p>
+                    </div>
                 </div>
-            </div>
 
-        </section>
-        <!--FIM ABOUT US (HISTÓRIA 01/02) VICTOR-->
+                <!--FIM ABOUT US HISTÓRIA VICTOR-->
 
-        <!---ABOUT US 01 historia atual Cath-->
-        <section>
-            <div>
-                <div>
-                    <span>Com mais de 20 anos de experiência no mercado, nossa trajetória é marcada por dedicação e
-                        busca constante por inovação.
-                        Hoje, combinamos conhecimento técnico especializado com o compromisso de atender às
-                        necessidades dos nossos clientes de forma confiável e eficiente. </span>
+                <!---ABOUT US 01 historia atual Cath-->
 
-                </div>
-                <div>
-                    <p>Nosso propósito é continuar crescendo e nos destacando como referência em manutenção de
-                        eletrodomésticos,
-                        acompanhando as inovações do mercado e oferecendo soluções modernas que fazem a diferença
-                        no dia a dia dos nossos clientes.</p>
-                </div>
-            </div>
-
-            <!--numeros interativos-->
-            <div class="numeros geral">
-                <div class="numeros div">
-
-                    <div class="cada numero 1">
+                <div class="flex items-center gap-15">
+                    <div class="flex flex-col w-2xl gap-10">
                         <div>
-                            <span>+</span>
-                            <span>20</span>
+                            <p class="text-3xl">Com mais de 20 anos de experiência no mercado, nossa trajetória é marcada por
+                                dedicação e
+                                busca constante por inovação.
+                                Hoje, combinamos conhecimento técnico especializado com o compromisso de atender às
+                                necessidades dos nossos clientes de forma confiável e eficiente.
+                            </p>
+
                         </div>
-                        <hr>
-                        <div class="escrito">
-                            <p>anos de experiência que você pode confiar</p>
+                        <div>
+                            <p class="text-xl">Nosso propósito é continuar crescendo e nos destacando como referência em manutenção
+                                de
+                                eletrodomésticos,
+                                acompanhando as inovações do mercado e oferecendo soluções modernas que fazem a
+                                diferença
+                                no dia a dia dos nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-xl">
+                        <img src="../assets/logos/AboutUs-História.JPG" alt="">
+                    </div>
+                </div>
+
+                <!--numeros interativos-->
+
+                <div class="flex justify-around">
+
+                    <div class= "">
+                        <div class="text-center">
+                            <span class="text-5xl font-bold font-roboto">+ 20</span>
+                            <hr class="mx-auto w-[50%] text-cold-white">
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-xl font-bebasneue">anos de experiência que você pode confiar</p>
                         </div>
                     </div>
 
-                    <div class="cada numero 2">
-                        <div>
-                            <span>3</span>
-                            <span>K</span>
+                    <div>
+                        <div class="text-center">
+                            <span class="text-5xl font-bold font-roboto">3K</span>
                         </div>
-                        <hr>
-                        <div class="escrito">
-                            <p>clientes satisfeitos</p>
+                        <hr class="mx-auto w-[50%] text-cold-white">
+                        <div class="pt-3">
+                            <p class="text-xl font-bebasneue">clientes satisfeitos</p>
                         </div>
                     </div>
 
-                    <div class="cada numero 3">
-                        <div>
-                            <span>18</span>
-                            <span>K</span>
+                    <div>
+                        <div class="text-center">
+                            <span class="text-5xl font-bold font-roboto">18K</span>
                         </div>
-                        <hr>
-                        <div class="escrito">
-                            <p>projetos concluídos com excelência</p>
+                        <hr class="mx-auto w-[50%] text-cold-white">
+                        <div class="pt-3">
+                            <p class="text-xl font-bebasneue">projetos concluídos com excelência</p>
                         </div>
                     </div>
                 </div>
+
+
+                <!---Fim ABOUT US 01 historia atual Cath-->
             </div>
+
         </section>
-        <!---Fim ABOUT US 01 historia atual Cath-->
+
+
 
         <!--ABOUT US (VÍDEO) VICTOR-->
         <section>
@@ -194,21 +219,28 @@
         <!--FIM ABOUT US (VÍDEO) VICTOR-->
 
         <!--SERVIÇOS VICTOR-->
-        <section id="Servicos">
-            <div>
-                <h1>Nosso Serviços</h1>
-                <div>
-                    <div>
-                        <h2>Especialista em Geladeiras Side by Side e Tecnologia Inverter.</h2>
-                        <p>Realizamos manutenção especializada em geladeiras modernas,
+        <section id="Servicos" class="px-10 md:px-24 lg:px-52 pt-20">
+            <div class="flex flex-col items-center">
+                <h1 class="text-5xl font-bold font-roboto pb-20">Nosso Serviços</h1>
+                <div class="flex justify-between">
+                    <div class="flex flex-col gap-4 w-[50%]">
+                        <h2 class="text-3xl font-semibold font-bebasneue py-10">Especialista em Geladeiras Side by Side e Tecnologia Inverter.</h2>
+                        <p class="text-2xl fontbold font-roboto">Realizamos manutenção especializada em geladeiras modernas,
                             como Side by Side, French Door e Frost Free, com foco em tecnologia
                             inverter para maior eficiência e durabilidade.</p>
-                        <button> <a href="https://wa.link/u6e3el">Fale com o Especialista</a></button>
+                        <a href="https://wa.link/u6e3el">
+                            <button class="bg-azul-marinho px-4 py-3 rounded-4xl cursor-pointer hover:opacity-95 text-branco"> Fale com o Especialista</button>
+                        </a>
                     </div>
-                    <div><img src="" alt=""></div>
+                    <div class="w-[40%]">
+                        <img class="w-xl" src="../assets/logos/AboutUs-História.JPG" alt="">
+                    </div>
                 </div>
+
                 <!--SLIDE MARCA-->
-                <div></div>
+                <div>
+                    <h1>SLIDE</h1>
+                </div>
                 <!--FIM SLIDE-->
             </div>
 

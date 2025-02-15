@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
     /* CORES SECUNDÁRIAS */
     --color-cold-white: #F1F1F1;
     --color-light-salmon: #FF8C69;
