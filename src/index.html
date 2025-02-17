@@ -17,8 +17,8 @@
 
 <body class="overflow-x-hidden">
     <!--CABEÇALHO-->
-    <header class="px-10 md:px-24 lg:px-52 py-3 flex bg-cold-white ">
-        <div class="flex items-center md:gap-72">
+    <header class="px-4 lg:px-6 py-3 flex bg-cold-white">
+        <div class="flex justify-between xl:justify-around w-full items-center xl:gap-72">
             <div>
                 <img class="w-40 min-w-40" src="../assets/logos/logo-brastecno-cinsa.png" alt="Logo Brastecno Cinza">
             </div>
@@ -35,6 +35,9 @@
                 </ul>
 
             </nav>
+            <div class="xl:hidden">
+                <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+            </div>
         </div>
     </header>
     <!--FIM CABEÇALHO-->
@@ -103,14 +106,14 @@
 
 
         <section id="Abt" class="bg-branco px-10 md:px-24 lg:px-52 pt-20">
-            <div class="flex flex-col gap-20">
+            <div class="flex flex-col gap-15 lg:gap-20">
                 <!--01 valores Cath-->
-                <div class="flex flex-col gap-10 my-10 max-w-7xl">
+                <div class="flex flex-col gap-10 lg:my-10 max-w-7xl">
                     <div class="flex">
                         <h3 class="text-3xl font-roboto tracking-wider">Sobre nós</h3>
                     </div>
                     <div class="flex">
-                        <p class="text-5xl font-bebasneue leading-snug">Na Brastecno, nossos valores de confiança,
+                        <p class="text-2xl font-bebasneue leading-snug">Na Brastecno, nossos valores de confiança,
                             dedicação e
                             inovação nos guiam em cada atendimento.
                             Trabalhamos com soluções modernas e transparentes para cuidar dos seus eletrodomésticos,
@@ -121,12 +124,12 @@
                 <!--01 Fim valores Cath-->
 
                 <!--ABOUT US HISTÓRIA VICTOR-->
-                <div class="flex flex-col lg:flex-row items-center gap-15 ">
-                    <div class=" min-w-[300px] max-w-[500px] bg-azul-marinho">
+                <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-15 ">
+                    <div class=" min-w-[250px] max-w-[400px] bg-azul-marinho">
                         <img src="../assets/logos/AboutUs-História.JPG" alt="" class="w-full">
                     </div>
                     <div class="flex text-center lg:text-start flex-col gap-5 max-w-2xl">
-                        <h1 class="font-roboto text-8xl font-bold">2005</h1>
+                        <h1 class="font-roboto text-6xl font-bold">2005</h1>
                         <h3 class="font-bebasneue text-3xl">Uma Paixão Que Virou Referência em Manutenção</h3>
                         <p class="font-roboto text-lg lg:text:xl leading-relaxed">A Brastecno nasceu da paixão pelo
                             conserto de
@@ -144,8 +147,8 @@
 
 
 
-                <div class="flex flex-col lg:flex-row items-center gap-15">
-                    <div class="flex flex-col ">
+                <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-15">
+                    <div class="flex flex-col gap-10">
                         <p class="text-xl lg:text-3xl font-bold">Com mais de 20 anos de experiência no mercado,
                             nossa trajetória é
                             marcada por
@@ -166,7 +169,7 @@
                         </p>
                     </div>
 
-                    <div class="min-w-[300px] max-w-[500px] bg-azul-marinho">
+                    <div class="min-w-[300px] max-w-[400px] bg-azul-marinho">
                         <img src="../assets/logos/AboutUs-História.JPG" alt="" class="w-full">
                     </div>
                 </div>
@@ -177,7 +180,7 @@
 
                     <div class="text-center">
                         <div class="">
-                            <span class="text-5xl font-bold font-roboto">+ 20</span>
+                            <p class="text-5xl font-bold font-roboto">+ <span class="counter" data-target="20">0</span></p>
                             <hr class="mx-auto w-[50%] text-cold-white">
                         </div>
                         <div class="pt-3">
@@ -187,7 +190,7 @@
 
                     <div class="text-center">
                         <div class="text-center">
-                            <span class="text-5xl font-bold font-roboto">3K</span>
+                            <p class="text-5xl font-bold font-roboto"><span class="counter" data-target="3">0</span> K</p>
                         </div>
                         <hr class="mx-auto w-[50%] text-cold-white">
                         <div class="pt-3">
@@ -197,7 +200,7 @@
 
                     <div class="text-center">
                         <div class="text-center">
-                            <span class="text-5xl font-bold font-roboto">18K</span>
+                            <p class="text-5xl font-bold font-roboto"><span class="counter" data-target="18">0</span> K</p>
                         </div>
                         <hr class="mx-auto w-[50%] text-cold-white">
                         <div class="pt-3">
@@ -227,25 +230,25 @@
         <!--SERVIÇOS VICTOR-->
         <section id="Servicos" class="px-10 md:px-24 lg:px-52 pt-20">
             <div class="flex flex-col items-center">
-                <h1 class="text-5xl font-bold font-roboto pb-20">Nosso Serviços</h1>
-                <div class="flex justify-between">
-                    <div class="flex flex-col gap-4 max-w-[50%]">
-                        <h2 class="text-3xl font-semibold font-bebasneue py-10">Especialista em Geladeiras Side by Side
+                <h1 class="text-4xl font-bold font-roboto pb-10 lg:pb-20">Nossos Serviços</h1>
+                <div class="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-10">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-2xl font-semibold font-bebasneue lg:pb-5">Especialista em Geladeiras Side by Side
                             e Tecnologia Inverter.</h2>
-                        <p class="text-2xl fontbold font-roboto">
+                        <p class="text-xl fontbold font-roboto">
                             Realizamos manutenção especializada em geladeiras
                             modernas,
                             como Side by Side, French Door e Frost Free, com foco em tecnologia
                             inverter para maior eficiência e durabilidade.
                         </p>
-
                         <button
                             class="bg-azul-marinho px-4 py-3 rounded-4xl cursor-pointer hover:opacity-95 text-branco w-max">
                             <a href="https://wa.link/u6e3el">Fale com o Especialista</a>
                         </button>
 
                     </div>
-                    <div class=" min-w-[300px] max-w-[500px] bg-azul-marinho">
+
+                    <div class=" min-w-[300px] max-w-[400px] bg-azul-marinho">
                         <img class="w-xl" src="../assets/logos/AboutUs-História.JPG" alt="" class="w-full">
                     </div>
                 </div>
@@ -263,7 +266,8 @@
         <!--OUTROS SERVIÇOS VICTOR-->
         <section class="px-10 md:px-24 lg:px-52 pt-20">
             <div class="flex flex-col">
-                <div class="flex flex-col 2xl:flex-row items-start 2xl:items-center justify-between pb-10 gap-5 lg:gap-0">
+                <div
+                    class="flex flex-col 2xl:flex-row items-start 2xl:items-center justify-between pb-10 gap-5 lg:gap-0">
                     <div class="flex flex-col gap-4">
                         <span class="border px-3 py-1 rounded-4xl text-lg font-semibold w-max">Outros Serviços</span>
                         <h1 class="text-4xl">Especialidades</h1>
@@ -361,13 +365,14 @@
 
         <!--FEEDBACKS VICTOR-->
         <section id="Feedback" class="px-10 md:px-24 lg:px-52 pt-20">
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col">
                 <div class="flex flex-col justify-center items-center gap-5">
                     <h2 class="text-4xl font-bold font-bebasneue">O que nossos clientes dizem?</h2>
                     <p class="text-xl font-roboto text-center">Leia o review de nossos clientes satisfeitos para
                         entender um pouco mais de nossos serviços.</p>
                 </div>
-                <div class="w-[100%]">
+
+                <div class="w-[100%] mt-10">
                     <!--FEEDBACK DOS CLIENTES NO GOOGLE-->
                     <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25523146' frameborder='0'
                         width='100%' height='500px'></iframe>
@@ -379,55 +384,79 @@
 
         <!--FAQS-->
         <section id="FAQ" class="px-10 md:px-24 lg:px-52 pt-20">
-            <div class="flex">
-                <div class="flex flex-col">
-                    <div>
-                        <h1>Ficou com alguma dúvida?</h1>
-                        <p>Confira abaixo as perguntas mais frequentes que recebemos:</p>
-                    </div>
+            <div class="flex flex-col justify-around gap-5 xl:flex-row">
+                <div class="flex flex-col gap-3">
+
+                    <h1 class="text-2xl">Ficou com alguma dúvida?</h1>
+                    <p class="text-lg">Confira abaixo as perguntas mais frequentes que recebemos:</p>
+
                 </div>
 
-                <div class="flex flex-col">
-                    <div>
-                        <div>
-                            <p>1. O orçamento é cobrado?</p>
-                            <i class="fa fa-chevron-down"></i>
+                <div id="infoFaqs" class="flex flex-col gap-3 max-w-[500px] xl:min-w-[650px] xl:max-w-[650px]">
+
+                    <div class="flex">
+                        <div class="border-r p-3 py-5 bg-gray">
+                            <p>1</p>
                         </div>
-                        <div>
-                            <p>Sim, o orçamento é cobrado individualmente. No entanto, caso o serviço seja realizado, o
-                                valor pago pelo orçamento é descontado do total do serviço.</p>
+                        <div class="faqsP flex flex-col gap-4 p-3 py-5 bg-cold-white w-full">
+                            <div class="flex items-center justify-between">
+                                <p>O orçamento é cobrado?</p>
+                                <i class="icon fa-solid fa-chevron-down cursor-pointer"></i>
+                            </div>
+                            <div class="w-[90%] hidden">
+                                <p>Sim, o orçamento é cobrado individualmente. No entanto, caso o serviço seja
+                                    realizado, o
+                                    valor pago pelo orçamento é descontado do total do serviço
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <p>2. Onde são realizados os atendimentos?</p>
-                            <i class="fa fa-chevron-down"></i>
+                    <div class="flex">
+                        <div class="border-r p-3 bg-gray">
+                            <p>2</p>
                         </div>
-                        <div>
-                            <p>Os atendimentos são feitos diretamente na residência do cliente, sem a necessidade de
-                                transportar o eletrodoméstico para outro local.</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <p>3. Quais regiões atendemos?</p>
-                            <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <div>
-                            <p>A Brastecno atende Guarulhos e região.</p>
+                        <div class="faqsP flex flex-col gap-4 p-3 bg-cold-white w-full">
+                            <div class="flex items-center justify-between">
+                                <p>Onde são realizados os atendimentos?</p>
+                                <i class="icon fa-solid fa-chevron-down cursor-pointer"></i>
+                            </div>
+                            <div class="w-[90%] hidden">
+                                <p>Os atendimentos são feitos diretamente na residência do cliente, sem a necessidade de
+                                    transportar o eletrodoméstico para outro local.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <p>4. Quais equipamentos consertamos?</p>
-                            <i class="fa fa-chevron-down"></i>
+                    <div class="flex">
+                        <div class="border-r p-3 bg-gray">
+                            <p>3</p>
                         </div>
-                        <div>
-                            <p>Somos especialistas no conserto de geladeiras, máquinas de lavar e secar, micro-ondas,
-                                lava-louças e fogões.</p>
+                        <div class="faqsP flex flex-col gap-4 p-3 bg-cold-white w-full">
+                            <div class="flex items-center justify-between">
+                                <p>Quais regiões atendemos?</p>
+                                <i class="icon fa fa-chevron-down cursor-pointer"></i>
+                            </div>
+                            <div class="w-[90%] hidden">
+                                <p>A Brastecno atende Guarulhos e região.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="border-r p-3 bg-gray">
+                            <p>4</p>
+                        </div>
+                        <div class="faqsP flex flex-col gap-4 p-3 bg-cold-white w-full">
+                            <div class="flex items-center justify-between">
+                                <p>Quais equipamentos consertamos?</p>
+                                <i class="icon fa fa-chevron-down cursor-pointer"></i>
+                            </div>
+                            <div class="w-[90%] hidden">
+                                <p>Somos especialistas no conserto de geladeiras, máquinas de lavar e secar,
+                                    micro-ondas,
+                                    lava-louças e fogões.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -454,6 +483,8 @@
 
         </footer>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
