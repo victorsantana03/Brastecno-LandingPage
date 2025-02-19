@@ -1,4 +1,7 @@
 const infoFaqs = document.querySelector("#infoFaqs")
+const menu = document.querySelector("#menu")
+const btnMenu = document.querySelector("#btn-menu")
+const btnCloseMenu = document.querySelector("#btn-close-menu")
 
 
 // INTERAÇÃO DO FAQ'S
@@ -50,3 +53,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//INTERAÇÃO MENU
+
+//abrir
+btnMenu.addEventListener('click', function(){
+    menu.classList.toggle("hidden")
+
+    setTimeout(() => {
+        menu.classList.toggle("opacity-0")
+        document.querySelector("#menu-content").classList.toggle("translate-x-full")
+    }, 10)
+})
+
+//fechar
+btnCloseMenu.addEventListener('click', function(){
+    menu.classList.toggle("opacity-0")
+    document.getElementById("menu-content").classList.toggle("translate-x-full")
+
+    setTimeout(() => {
+        menu.classList.toggle("hidden")
+    }, 300)
+})
+
+//fechar ao clicar fora
+menu.addEventListener("click", function(event){
+    clique = event.target
+    if (clique.classList.contains("menu")) {
+        menu.classList.toggle("hidden")
+        menu.classList.toggle("flex")
+    }
+})
