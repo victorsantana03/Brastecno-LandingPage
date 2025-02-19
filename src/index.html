@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -37,22 +37,48 @@
         </div>
 
         <div class="xl:hidden">
-            <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+            <i id="btn-menu" class="fa-solid fa-bars text-xl cursor-pointer"></i>
         </div>
     </header>
     <!--FIM CABEÇALHO-->
 
     <main>
+
+        <!--MENU LATERAL-->
+        <div id="menu" class="menu fixed top-0 h-full w-full bg-[rgba(0,0,0,0.3)] z-50 hidden opacity-0 transition-opacity duration-300">
+            <div id="menu-content" class="fixed top-0 right-0 bg-cold-white w-[50%] h-full transform translate-x-full transition-transform duration-300">
+                <div class="flex flex-col">
+                    <div class="text-end p-5 text-xl">
+                        <i id="btn-close-menu" class="fa-solid fa-xmark cursor-pointer"></i>
+                    </div>
+
+                    <nav>
+                        <ul class="flex flex-col ">
+                            <li class="border-t py-3 px-5"><a href="#Home">Home</a></li>
+                            <li class="border-t py-3 px-5"><a href="#Abt">Sobre Nós</a></li>
+                            <li class="border-t py-3 px-5"><a href="#Servicos">Serviços</a></li>
+                            <li class="border-t py-3 px-5"><a href="#Feedback">Feedbacks</a></li>
+                            <li class="border-t py-3 px-5"><a href="#FAQ">FAQ's</a></li>
+                            <li class="border-t border-b px-5 py-3"><a href="https://wa.link/u6e3el" class="text-azul-marinho">Contato</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+        <!--MENU LATERAL-->
+
         <!--HOME-->
-        <section id="Home" class="px-10 md:px-24 lg:px-52 py-10 md:py-20 h-[100dvh] md:h-full bg-cold-white relative ">
+        <section id="Home" class="px-10 md:px-24 lg:px-52 py-10 md:py-20 h-screen xl:min-h-0 xl:h-auto md:h-full bg-cold-white relative">
             <div class="flex justify-between items-center ">
-                <div class="flex flex-col items-center md:items-start  gap-24 md:pt-10">
-                    <div class="md:w-xl">
+                <div class="flex flex-col items-center md:items-start gap-24 md:pt-10">
+                    <div class="md:w-xl pt-20 xl:pt-0">
                         <h1
                             class="lg:text-6xl/20 md:text-5xl/15 xl:text-7xl/20 text-4xl font-semibold font-bebasneue text-center md:text-start ">
                             Manutenção de Eletrodomésticos com
                             Qualidade e Confiança</h1>
-                        <div class="font-roboto pt-10 flex justify-center md:justify-start">
+                        <div class="font-roboto pt-2 xl:pt-10 flex justify-center md:justify-start">
                             <button class="bg-azul-marinho px-4 py-3 rounded-4xl cursor-pointer hover:opacity-95">
                                 <a href="https://wa.link/u6e3el">
                                     <p class="text-cold-white font-roboto font-semibold text-md md:text-xl">Agende seu
@@ -85,19 +111,19 @@
 
 
 
-                <div class="xl:flex hidden items-center gap-3 rotate-90 text-gray ">
+                <div class="2xl:flex hidden items-center gap-3 rotate-90 text-gray ">
                     <p class="font-roboto text-gray">scroll down</p>
                     <div class="border w-14"></div>
                 </div>
             </div>
 
             <div
-                class="absolute bottom-0 left-[50%] md:left-[57%] lg:left-[65%] xl:left-[60%] 2xl:left-[45%] transform -translate-x-1/2 w-[210px] md:w-[220px] lg:w-[300px] xl:w-[430px] md:translate-x-[20px] z-10">
+                class="absolute bottom-0 left-[50%] md:left-[57%] lg:left-[50%] xl:left-[55%] 2xl:left-[45%] transform -translate-x-1/2 w-[210px] md:w-[220px] lg:w-[350px] xl:w-[380px] 2xl:w-[430px] md:translate-x-[20px] z-10">
                 <img src="../assets/images-section/foto-home.png" alt="" class="w-full ">
             </div>
 
             <div
-                class="absolute bottom-0 left-[80%] md:left-[75%] lg:left-[65%] xl:left-[60%] 2xl:left-[63%] transform -translate-x-1/2 w-[140px] md:w-[190px] lg:w-[300px] xl:w-[320px] md:translate-x-[20px] -z-0">
+                class="absolute bottom-0 left-[80%] md:left-[75%] lg:left-[75%] xl:left-[77%] 2xl:left-[63%] transform -translate-x-1/2 w-[140px] md:w-[190px] lg:w-[250px] 2xl:w-[320px] md:translate-x-[20px] -z-0">
                 <img src="../assets/background-section/20005arte-gray.png" alt="" class="w-full">
             </div>
 
@@ -254,9 +280,9 @@
             </div>
 
             <div class="flex flex-col items-center ">
-                <h1 class="text-4xl font-bold font-roboto pb-10 lg:pb-20 z-50">Nossos Serviços</h1>
+                <h1 class="text-4xl font-bold font-roboto pb-10 lg:pb-20 z-40">Nossos Serviços</h1>
                 <div class="flex flex-col lg:flex-row lg:justify-between gap-5 lg:gap-10">
-                    <div class="flex flex-col max-w-[700px] gap-4 z-50">
+                    <div class="flex flex-col max-w-[700px] gap-4 z-40">
                         <h2 class="text-2xl font-semibold font-bebasneue lg:pb-5">Especialista em Geladeiras Side by
                             Side
                             e Tecnologia Inverter.</h2>
@@ -273,8 +299,8 @@
 
                     </div>
 
-                    <div class=" min-w-[300px] max-w-[400px] bg-azul-marinho z-50">
-                        <img src="../assets/images-section/AboutUs-História.JPG" alt="" class="w-full">
+                    <div class=" min-w-[300px] max-w-[400px] bg-azul-marinho z-40">
+                        <img src="../assets/images-section/AboutUs-História (2).JPG" alt="" class="w-full">
                     </div>
                 </div>
 
@@ -399,13 +425,13 @@
             </div>
 
             <div class="flex flex-col">
-                <div class="flex flex-col justify-center items-center gap-5 z-50">
+                <div class="flex flex-col justify-center items-center gap-5 z-40">
                     <h2 class="text-4xl font-bold font-bebasneue">O que nossos clientes dizem?</h2>
                     <p class="text-xl font-roboto text-center">Leia o review de nossos clientes satisfeitos para
                         entender um pouco mais de nossos serviços.</p>
                 </div>
 
-                <div class="w-[100%] mt-10 z-50">
+                <div class="w-[100%] mt-10 z-40">
                     <!--FEEDBACK DOS CLIENTES NO GOOGLE-->
                     <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25523146' frameborder='0'
                         width='100%' height='500px'></iframe>
@@ -430,7 +456,7 @@
 
                 </div>
 
-                <div id="infoFaqs" class="flex flex-col gap-3 max-w-[500px] xl:min-w-[650px] xl:max-w-[650px] z-50">
+                <div id="infoFaqs" class="flex flex-col gap-3 max-w-[500px] xl:min-w-[650px] xl:max-w-[650px] z-40">
 
                     <div class="flex">
                         <div class="border-r p-3 py-5 bg-gray">
@@ -509,9 +535,9 @@
                 <img src="../assets/background-section/05arte-gray.png" alt="">
             </div>
 
-            <div class="flex flex-col xl:flex-row items-center gap-10 justify-around">
+            <div class="flex flex-col xl:flex-row items-center gap-10 justify-around ">
                 <div class="flex flex-col items-center xl:items-start gap-5 max-w-[700px]">
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3 z-40">
                         <h2 class="text-2xl font-roboto font-semibold">Tem dúvidas ou precisa de ajuda com o seu
                             eletrodoméstico?</h2>
                         <p class="text-xl">Nós estamos prontos para atender você com soluções rápidas e confiáveis.
