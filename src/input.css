@@ -13,10 +13,21 @@
 
     /* CORES PRIMÁRIAS */
     --color-azul-marinho: #1D4289;
-    --color-gradient-azul: #07132A;
+    --color-gradient-azul: linear-gradient(0deg, rgba(27,66,137,1) 0%, rgba(7,19,42,1) 30%);
     --color-branco: #FFFFFF;
 
     /* FONTES */
     --font-bebasneue: "Bebas Neue", "sans-serif";
     --font-roboto: "Roboto", serif;
+
+    --animate-slider: slider 50s linear infinite;
+
+    @keyframes slider {
+       0%{
+        transform: translateX(0);
+       } 
+       100%{
+        transform: translateX(-100%);
+       }
+    }
 }
