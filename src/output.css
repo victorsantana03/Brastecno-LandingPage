@@ -630,6 +630,12 @@
   .left-\[80\%\] {
     left: 80%;
   }
+  .left-\[84\%\] {
+    left: 84%;
+  }
+  .left-\[85\%\] {
+    left: 85%;
+  }
   .isolate {
     isolation: isolate;
   }
@@ -914,6 +920,15 @@
   }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[110px\] {
+    width: 110px;
+  }
+  .w-\[120px\] {
+    width: 120px;
+  }
+  .w-\[130px\] {
+    width: 130px;
   }
   .w-\[140px\] {
     width: 140px;
