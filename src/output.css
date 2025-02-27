@@ -618,23 +618,14 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-\[calc\(5\%\+10vh\)\] {
-    bottom: calc(5% + 10vh);
-  }
   .-left-14 {
     left: calc(var(--spacing) * -14);
   }
   .left-\[50\%\] {
     left: 50%;
   }
-  .left-\[80\%\] {
-    left: 80%;
-  }
   .left-\[84\%\] {
     left: 84%;
-  }
-  .left-\[85\%\] {
-    left: 85%;
   }
   .isolate {
     isolation: isolate;
@@ -888,9 +879,6 @@
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
   }
-  .min-h-\[calc\(100vh-150px\)\] {
-    min-height: calc(100vh - 150px);
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -915,23 +903,23 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[70px\] {
+    width: 70px;
+  }
+  .w-\[80px\] {
+    width: 80px;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
   .w-\[100\%\] {
     width: 100%;
   }
-  .w-\[110px\] {
-    width: 110px;
+  .w-\[100px\] {
+    width: 100px;
   }
   .w-\[120px\] {
     width: 120px;
-  }
-  .w-\[130px\] {
-    width: 130px;
-  }
-  .w-\[140px\] {
-    width: 140px;
   }
   .w-\[210px\] {
     width: 210px;
@@ -3480,4 +3468,10 @@
 @property --tw-contain-style {
   syntax: "*";
   inherits: false;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
 }
