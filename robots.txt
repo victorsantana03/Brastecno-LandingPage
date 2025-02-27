@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /package-lock.json
+Disallow: /package.json
+
+Allow: /index.html
+
+Sitemap: https://brastecnoguarulhos.com.br/sitemap.xml 

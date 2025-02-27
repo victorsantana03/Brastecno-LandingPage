@@ -3,7 +3,6 @@ const menu = document.querySelector("#menu")
 const btnMenu = document.querySelector("#btn-menu")
 const btnCloseMenu = document.querySelector("#btn-close-menu")
 
-
 // INTERAÇÃO DO FAQ'S
 infoFaqs.addEventListener('click', function (e) {
     let clique = e.target
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         updateCounter();
     };
-
     
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(counter);
     });
 });
-
 
 //INTERAÇÃO MENU
 
