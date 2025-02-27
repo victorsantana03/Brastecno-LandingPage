@@ -3469,9 +3469,3 @@
   syntax: "*";
   inherits: false;
 }
-
-@layer base {
-  :root {
-    color-scheme: light;
-  }
-}
