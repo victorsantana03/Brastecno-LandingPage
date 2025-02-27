@@ -615,20 +615,11 @@
   .right-15 {
     right: calc(var(--spacing) * 15);
   }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
-  .right-25 {
-    right: calc(var(--spacing) * 25);
-  }
-  .right-96 {
-    right: calc(var(--spacing) * 96);
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
+  .bottom-\[calc\(5\%\+10vh\)\] {
+    bottom: calc(5% + 10vh);
   }
   .-left-14 {
     left: calc(var(--spacing) * -14);
@@ -890,6 +881,9 @@
   }
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
+  }
+  .min-h-\[calc\(100vh-150px\)\] {
+    min-height: calc(100vh - 150px);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -1929,9 +1923,6 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
-  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
@@ -2047,9 +2038,6 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-\[200px\] {
-    font-size: 200px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -3018,11 +3006,6 @@
       padding-bottom: calc(var(--spacing) * 20);
     }
   }
-  .xl\:text-start {
-    @media (width >= 80rem) {
-      text-align: start;
-    }
-  }
   .xl\:text-2xl {
     @media (width >= 80rem) {
       font-size: var(--text-2xl);
@@ -3076,24 +3059,9 @@
       position: absolute;
     }
   }
-  .\32 xl\:left-\[43\%\] {
-    @media (width >= 96rem) {
-      left: 43%;
-    }
-  }
   .\32 xl\:left-\[45\%\] {
     @media (width >= 96rem) {
       left: 45%;
-    }
-  }
-  .\32 xl\:left-\[63\%\] {
-    @media (width >= 96rem) {
-      left: 63%;
-    }
-  }
-  .\32 xl\:left-\[65\%\] {
-    @media (width >= 96rem) {
-      left: 65%;
     }
   }
   .\32 xl\:left-\[67\%\] {
@@ -3104,16 +3072,6 @@
   .\32 xl\:flex {
     @media (width >= 96rem) {
       display: flex;
-    }
-  }
-  .\32 xl\:w-\[300px\] {
-    @media (width >= 96rem) {
-      width: 300px;
-    }
-  }
-  .\32 xl\:w-\[310px\] {
-    @media (width >= 96rem) {
-      width: 310px;
     }
   }
   .\32 xl\:w-\[320px\] {
