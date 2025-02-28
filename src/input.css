@@ -20,14 +20,36 @@
     --font-bebasneue: "Bebas Neue", "sans-serif";
     --font-roboto: "Roboto", serif;
 
+    /*ANIMAÇÃO*/
     --animate-slider: slider 50s linear infinite;
+}
 
-    @keyframes slider {
-       0%{
-        transform: translateX(0);
-       } 
-       100%{
-        transform: translateX(-100%);
-       }
+/*ANIMAÇÃO SLIDER*/
+@keyframes slider {
+    0%{
+     transform: translateX(0);
+    } 
+    100%{
+     transform: translateX(-100%);
+    }
+}
+
+/*IMPEDIR ALTERAÇÃO DE CORES NO MODO DARK*/
+@layer base {
+    :root {
+      color-scheme: light;
+      background-color: white !important;
+      color: black !important;
+    }
+
+    img, svg {
+        filter: none !important;
+        mix-blend-mode: normal !important;
+    }
+
+    * {
+        forced-color-adjust: none !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 }

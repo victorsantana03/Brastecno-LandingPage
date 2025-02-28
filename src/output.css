@@ -612,9 +612,6 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-15 {
-    right: calc(var(--spacing) * 15);
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -882,9 +879,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -903,20 +897,11 @@
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[70px\] {
-    width: 70px;
-  }
-  .w-\[80px\] {
-    width: 80px;
-  }
   .w-\[90\%\] {
     width: 90%;
   }
   .w-\[100\%\] {
     width: 100%;
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[120px\] {
     width: 120px;
@@ -1057,10 +1042,6 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1096,9 +1077,6 @@
   }
   .scale-none {
     scale: none;
-  }
-  .rotate-90 {
-    rotate: 90deg;
   }
   .rotate-none {
     rotate: none;
@@ -3057,11 +3035,6 @@
       line-height: calc(var(--spacing) * 20);
     }
   }
-  .\32 xl\:absolute {
-    @media (width >= 96rem) {
-      position: absolute;
-    }
-  }
   .\32 xl\:left-\[45\%\] {
     @media (width >= 96rem) {
       left: 45%;
@@ -3070,11 +3043,6 @@
   .\32 xl\:left-\[67\%\] {
     @media (width >= 96rem) {
       left: 67%;
-    }
-  }
-  .\32 xl\:flex {
-    @media (width >= 96rem) {
-      display: flex;
     }
   }
   .\32 xl\:w-\[320px\] {
@@ -3107,6 +3075,35 @@
       padding-inline: calc(var(--spacing) * 44);
     }
   }
+  .dark\:bg-white {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-white);
+    }
+  }
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@layer base {
+  :root {
+    color-scheme: light;
+    background-color: white !important;
+    color: black !important;
+  }
+  img, svg {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+  * {
+    forced-color-adjust: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
 @keyframes spin {
   to {
@@ -3132,14 +3129,6 @@
   50% {
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-@keyframes slider {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }
 @property --tw-translate-x {
