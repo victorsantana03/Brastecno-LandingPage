@@ -5,12 +5,14 @@ const btnCloseMenu = document.querySelector("#btn-close-menu")
 
 // INTERAÇÃO DO FAQ'S
 infoFaqs.addEventListener('click', function (e) {
-    let clique = e.target
-    if (clique.classList.contains('icon')) {
-        clique.classList.toggle("fa-chevron-down")
-        const resposta = clique.closest(".faqsP").querySelector("div:nth-of-type(2)")
+    let clique = e.target.closest('.faqsP') // Verifica se o clique foi dentro de .faqsP
+    if (clique) {
+        const resposta = clique.querySelector("div:nth-of-type(2)")
+        const icon = clique.querySelector(".icon")
+
         resposta.classList.toggle("hidden")
-        clique.classList.toggle("fa-chevron-up")
+        icon.classList.toggle("fa-chevron-down")
+        icon.classList.toggle("fa-chevron-up")
     }
 })
 
@@ -80,5 +82,16 @@ menu.addEventListener("click", function (event) {
         menu.classList.toggle("hidden")
         menu.classList.toggle("flex")
     }
+})
+
+//Evitando proteção de email
+document.addEventListener("DOMContentLoaded", function(){
+    const emailUser = "brastecnoassistencia"
+    const emailDomain = "gmail.com"
+    const email = `${emailUser}@${emailDomain}`
+
+    const emailLink = document.querySelector("#email-link")
+    emailLink.href = `mailto:${email}`
+    emailLink.querySelector("span").textContent = email
 })
 
